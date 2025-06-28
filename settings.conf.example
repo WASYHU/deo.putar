@@ -1,0 +1,27 @@
+[api]
+type = api
+prefix = api
+port = 1111
+hostLocalIp = your.public.ip.for.api.domain
+hostPublicIp = your.public.ip.for.api.domain
+key = 123456
+apiHostName = api.yourdomain.com
+
+[cloudflare]
+type = cloudflare
+email = your_cloudflare_email@example.com
+token = your_cloudflare_api_token
+domain = yourdomain.com
+
+[do-instance-1]
+type = digitalocean
+accessToken = your_digitalocean_personal_access_token
+dropletId = your_droplet_id_here_integer # ini akan diupdate oleh skrip setelah pembuatan droplet baru
+region = nyc1 # Contoh: Singapura
+socks5Port = 10001
+httpPort = 20001
+imageName = ubuntu-22-04-x64 # Pastikan image ini tersedia di DO
+sizeSlug = s-1vcpu-1gb # Contoh: ukuran droplet
+dropletName = my-proxy-droplet # Nama untuk droplet baru
+sshKeys = 12345678 # ID SSH Key dari DigitalOcean
+privateKeyPath = /path/to/your/private_key.pem # Path lokal ke private key SSH
