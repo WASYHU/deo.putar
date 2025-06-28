@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.use(morgan('combined'))
 
 const config = new ConfigParser()
-config.read('settings.conf')
+config.read('config.conf')
 
 const prefix = config.get('api', 'prefix')
 const appPort = config.get('api', 'port')
