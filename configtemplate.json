@@ -1,0 +1,24 @@
+{
+  "server": "server",
+  "server_port": 8388,
+  "password": "Pass",
+  "method": "aes-128-gcm",
+  "mode": "tcp_and_udp",
+  "local_address": "",
+  "local_port": null,
+  "locals": [
+    {
+      "protocol": "http",
+      "local_address": "",
+      "local_port": null
+    }
+  ],
+  "timeout": 60,
+  "udp_timeout": 60,
+  "dns_ipv6": false,
+  "fast_open": true,
+  "workers": 1,
+  "log": {
+    "level": 1
+  }
+}

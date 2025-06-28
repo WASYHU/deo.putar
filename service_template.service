@@ -1,0 +1,12 @@
+[Unit]
+Description=sslocal process
+Wants=network-online.target
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sslocal -c config_path
+User=root
+
+[Install]
+WantedBy=multi-user.target
